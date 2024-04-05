@@ -1,7 +1,8 @@
-const userNum = parseInt('Inserisci un numero da 1 a 5');
-const array1 = [];
-
+const userNum = parseInt(prompt('Inserisci un numero da 1 a 5'));
 
 for (let i = 0; i < userNum; i++) {
-  generateArray(userNum)
+  const newArray = generateArray();
+  console.log(newArray);
+
+  printArray(newArray);
 }

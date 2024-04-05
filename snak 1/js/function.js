@@ -1,19 +1,21 @@
 function getRandomNum (min, max) {
-  return Math.floor((Math.random() * (max - min) +1) + max);
+  return Math.floor((Math.random() * (max - min)) + min);
 }
 
 
-function generateArray(num) {
-  const totalArray = [];
-  for (let i = 0; i < num; i++) {
-    const nameArray = 'array' + i;
-    console.log(i);
-    totalArray.push(nameArray)
+function generateArray() {
+  const newArray = [];
+  for (let i = 0; i < 10; i++) {
+    let numInArray = getRandomNum(1, 100)
+    newArray.push(numInArray);
 
   }
-  console.log(totalArray);
-  return totalArray;
+  return newArray;
   
 }
 
-generateArray(6);
+function printArray(array) {
+  const htmlElem = document.getElementById('list');
+
+  htmlElem.innerHTML += `<li>${array}</li>`;
+}
