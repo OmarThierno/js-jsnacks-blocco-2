@@ -11,6 +11,6 @@ function isWordLenghtSame(word1, word2) {
 }
 
 
-console.log(isWordLenghtSame('ciao', 'ciao'));
+// console.log(isWordLenghtSame('ciao', 'ciao'));
 
-console.log(wordLenght('coao'));
+// console.log(wordLenght('coao'));
