@@ -5,12 +5,13 @@
  */
 function separateArrayElem(array) {
   let str = ''
-  for (let i = 0; i < array.length; i++) {
-    if(i < array.length - 1) {
-      str += array[i] + ',';
-    } else {
-      str += array[i]
-    }
+  for (let i = 0; i < array.length -1; i++) {
+    str += array[i] + ',';
+    // if(i < array.length - 1) {
+    //   str += array[i] + ',';
+    // } else {
+    //   str += array[i]
+    // }
   }
-  return str
+  return str + array[array.length - 1];
 }
